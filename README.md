@@ -18,38 +18,34 @@ A Node.js/Express API for storing and managing traditional Afghan proverbs in Da
 ## Setup Instructions
 
 ### 1. Clone the repository
-```bash
+```
 git clone https://github.com/Maria873324/Afghan-proverbs-api
 cd Afghan-proverbs
 
 2. Install dependencies
-bash
 npm install
+
 3. Start the server
 For development (with nodemon):
-
-bash
 npm run dev
-For production:
 
-bash
+For production:
 npm start
 
 API Endpoints
 Get all proverbs
-bash
 curl http://localhost:3001/proverbs
+
 Get proverbs by category
-bash
 curl "http://localhost:3001/proverbs?category=wisdom"
+
 Get all categories
-bash
 curl http://localhost:3001/proverbs/categories
+
 Get single proverb
-bash
 curl http://localhost:3001/proverbs/1
+
 Add new proverb
-bash
 curl -X POST http://localhost:3001/proverbs \
 -H "Content-Type: application/json" \
 -d '{
@@ -59,15 +55,15 @@ curl -X POST http://localhost:3001/proverbs \
   "meaning": "Example meaning",
   "category": "example"
 }'
+
 Update proverb
-bash
 curl -X PUT http://localhost:3001/proverbs/1 \
 -H "Content-Type: application/json" \
 -d '{
   "meaning": "Updated meaning"
 }'
+
 Delete proverb
-bash
 curl -X DELETE http://localhost:3001/proverbs/1
 Example Responses
 Successful GET response (200)
@@ -100,7 +96,7 @@ Error responses
 Development Setup
 Install nodemon globally (if needed):
 
-bash
+
 npm install -g nodemon
 The package.json already includes:
 
