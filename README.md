@@ -33,21 +33,30 @@ npm run dev
 For production:
 npm start
 ```
-## API Endpoints
+## API Endpoints 📡
+
+| Method | Endpoint                | Description                     |
+|--------|-------------------------|---------------------------------|
+| GET    | `/proverbs`             | Get all proverbs                |
+| GET    | `/proverbs/:id`         | Get single proverb by ID        |
+| POST   | `/proverbs`             | Add new proverb                 |
+| PUT    | `/proverbs/:id`         | Update proverb                  |
+| DELETE | `/proverbs/:id`         | Delete proverb                  |
+
+## Advanced Endpoints
+
+| Method | Endpoint                          | Description                          |
+|--------|-----------------------------------|--------------------------------------|
+| GET    | `/proverbs?category=:category`    | Filter proverbs by category          |
+| GET    | `/proverbs/categories`            | List all available categories        |
+
+## Usage Examples 💡
+
+### Get all proverbs
 ```
-Get all proverbs
 curl http://localhost:3001/proverbs
-
-Get proverbs by category
-curl "http://localhost:3001/proverbs?category=wisdom"
-
-Get all categories
-curl http://localhost:3001/proverbs/categories
-
-Get single proverb
-curl http://localhost:3001/proverbs/1
 ```
-## Add new proverb
+### Add new proverb
 ```
 curl -X POST http://localhost:3001/proverbs \
 -H "Content-Type: application/json" \
@@ -59,7 +68,7 @@ curl -X POST http://localhost:3001/proverbs \
   "category": "example"
 }'
 ```
-## Update proverb
+### Update proverb
 ```
 curl -X PUT http://localhost:3001/proverbs/1 \
 -H "Content-Type: application/json" \
@@ -67,14 +76,14 @@ curl -X PUT http://localhost:3001/proverbs/1 \
   "meaning": "Updated meaning"
 }'
 ```
-## Delete proverb
+### Delete proverb
 ```
 curl -X DELETE http://localhost:3001/proverbs/1
 ```
-## Example Responses:
-### Successful GET response (200)
+## Example Responses🌟:
+
+### Successful GET response✅ (200)
 ```
-json
 {
   "id": 1,
   "textDari": "هر که بامش بیش، برفش بیشتر",
@@ -84,9 +93,8 @@ json
   "category": "wisdom"
 }
 ```
-### Successful POST response (201)
+### Successful POST response✅ (201)
 ```
-json
 {
   "id": 5,
   "textDari": "مثال جدید",
@@ -96,12 +104,14 @@ json
   "category": "example"
 }
 ```
-### Error responses
-400 Bad Request (invalid data)
-
-404 Not Found (proverb doesn't exist)
-
-500 Server Error
+### Error Examples⚠️
+```
+| Code | Message                | Description                     |
+|------|------------------------|---------------------------------|
+| 400  | `Missing required fields` | Invalid request data          |
+| 404  | `Proverb not found`    | Invalid ID provided           |
+| 500  | `Server error`         | Internal server error         |
+```
 
 ## Development Setup
 Install nodemon globally (if needed):
