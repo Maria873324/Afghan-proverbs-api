@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "textDari": "هر که بامش بیش، برفش بیشتر",
+    "textPashto": "هغه څوک چې د هغه پورتنۍ برخه لوړه وي، د هغه برف ډیر وي",
+    "translationEn": "The higher the roof, the more the snow",
+    "meaning": "With greater position comes greater responsibility",
+    "category": "wisdom"
+  },
+  {
+    "id": 2,
+    "textDari": "آب که از سر گذشت، چه یک گز چه صد گز",
+    "textPashto": "اوبه چې له سره تېرې شوې، که يو ګز که سل ګزه",
+    "translationEn": "Once the water passes over your head, it doesn’t matter if it’s one meter or a hundred.",
+    "meaning": "When something is already done or past the limit, the extent no longer matters.",
+    "category": "wisdom"
+  },
+  {
+    "id": 3,
+    "textDari": "قطره قطره جمع گردد وانگه دریا شود",
+    "textPashto": "څاڅکي څاڅکي سره راټولېږي او بیا سمندر کیږي",
+    "translationEn": "Drop by drop a river is made",
+    "meaning": "Small efforts accumulate to create something big",
+    "category": "perseverance"
+  },
+  {
+    "id": 4,
+    "textDari": "دوست آن باشد که گیرد دست دوست",
+    "textPashto": "ملګری هغه دی چې د ملګري لاس ونیسي",
+    "translationEn": "A friend is one who takes the hand of a friend",
+    "meaning": "True friends support each other in need",
+    "category": "friendship"
+  }
+]
